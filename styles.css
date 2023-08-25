@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'GFS-Custom Bubble 1';
+    src: url('/GFSCUS1D.TTF');
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+
+/* font-family: 'GFS-Custom Bubble 1'; para usar la fuente nueva*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+margin: 0;
+}
+a{text-decoration: none;}
+h1{font-family: 'GFS-Custom Bubble 1';}
+h2{font-family: 'Montserrat'; margin: 0;}
+p{font-family: 'Montserrat';}
+#fecha{font-family: 'Montserrat'; }
+#fechagrande{font-family: 'Montserrat';}
+#sencillo{font-family: 'GFS-Custom Bubble 1';}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.portada{
+    background-image: url(fondoportada.jpg);
+    background-size: cover;
+    margin: auto;
+    height: auto;
+}
+.portada .container .encabezado img{
+    height: 50px;
+    width: 100px;
+}
+.portada .encabezado{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.portada .container .encabezado a{
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+.portada .container .hero{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.portada .container .hero .left-text h2, p, form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-top: 20px;
+    gap: 10px;
+}
+#fecha{
+    font-weight: 500;
+}
+#boton1{
+    font-weight: 600;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: rgb(195, 215, 90);
+    font-size: 1.05em;
+}
+.portada .container .hero .albums img{
+    height: 15%;
+    width: 15%;
+    max-width: 110px;
+    max-height: 110px;
+}
+.portada .container .hero .albums {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.portada .container .hero .cara{
+    order: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.portada .container .hero .cara img{
+    width: 45vw;
+    max-width: 300px;
+}
+.fechagrande{
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(30, 98, 0);
+}
+.fechagrande h1{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    font-family: 'Montserrat'; 
+    color: white;
+    font-weight: 600;
+    font-size: 2em;
+    border: 2px solid white;
+    margin: 10px 5px;
+}
+.video .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+.video .container .videotitle span{margin: 0;}
+.video .container .videotitle{
+    color:  rgb(30, 98, 0);
+    margin: 10px;
+    font-size: 4.5vw;
+    font-weight: 500;
+    font-family: 'GFS-Custom Bubble 1';
+    text-align: center;
+}
+.video #boton2{
+    font-family: 'Montserrat';
+    display: flex;
+    font-size: 1.1em;
+    background-color:  rgb(30, 98, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 15px  rgb(30, 98, 0);
+    color: white;
+    margin-top: 15px;
+}
+.video #boton2:hover{
+    background-color:rgb(86, 133, 12) ;
+    box-shadow: 0 1px 15px rgba(135, 218, 6, 1);
+}
+.video .container .container-video{
+    position: relative;
+    height: 45vw;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video .container .container-video iframe{
+    height: 45vw;
+    width: 90%;
+    border: none;
+}
+.informacion{
+    margin-top: 30px;
+    background-color: rgb(30, 98, 0);
+}
+.informacion .container{
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+}
+.informacion .container .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: justify;
+}
+.informacion .container .info p{ font-size: 1em;}
+.informacion .container .info img{
+    height: 100px;
+    width: 200px;
+    margin-top: 15px;
+}
+.informacion .container .info p{
+    margin: 15px 0px;
+}
+.tira {
+    background-color: rgb(30, 98, 0);
+    color: white;
+    white-space: nowrap;
+    display: flex;
+    overflow: hidden;
+}
+.tira #sencillo{
+    display: flex;
+    overflow: hidden;
+    animation: rainbowtext 6s linear infinite;
+}
+@keyframes rainbowtext{
+    0% {
+        transform: translateX(calc(0vw - 10px));
+        color: black;
+    }
+    25%{
+        color: white;
+    }
+    50%{
+        transform: translateX(calc(100vw - 347px));
+        color: black;
+    }
+    75%{
+        color: white;
+    }
+    100% {
+        transform: translateX(0vw);
+        color: black;
+    }
+}
+.imagenes .container .collage img{
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 1px 10px black;
+}
+.imagenes .container{
+    display: flex;
+    justify-content: center;
+}
+.imagenes .container .collage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    gap: 20px;
+    margin-top: 20px;
+    max-width: 1000px;
+}
+footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+footer span{
+    font-family: 'GFS-Custom Bubble 1';
+    font-size: 4vw;
+}
+footer a{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+
+}
+footer a:hover{
+    text-shadow: 0 1.5px 10px rgb(135, 218, 6);
+    color:rgb(135, 218, 6) ;
+}
+@media (min-width: 750px){
+    .portada .container .encabezado{
+        font-size: 1.1em;
+    }
+    .portada .container .encabezado img{
+        height: 70px;
+        width: 120px;
+    }
+    .portada .container .hero{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 20px;
+        height: 43vw;
+        width: 100vw;
+        max-width: 1400px;
+        max-height: 675px;
+    }
+    .portada .container .hero .left-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 216px;
+    }
+    .portada .container .hero .left-text h2{
+        width: 200px;
+        text-align: center;
+    }
+    .portada .container .hero .left-text p{
+        width: 200px;
+        text-align: center;
+    }
+    .portada .container .hero .albums{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-right: 20px;
+    }
+    .portada .container .hero .albums img{
+        width: 90px ;
+        height: 90px;
+    }
+    .portada .container .hero .cara{
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    .fechagrande{
+        height: 90px;
+        display: flex;
+        align-items: center;
+    }
+    .fechagrande h1{
+        height: 65px;
+        display: flex;
+        align-items: center;
+        font-size: 2.3em;
+    }
+    .video #boton2{
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+    .video {
+        max-height: 800px;
+    }
+    .video .container .container-video{
+        max-height: 600px;
+        max-width: 1120px;
+    }
+    .video .container .container-video iframe{
+        max-height: 520px;
+        max-width: 920px;
+
+    }
+    .informacion .container .info p{
+        max-width: 860px;
+    }
+    .informacion .container .info{
+        height: 550px;
+    }
+    .tira #sencillo{
+        font-size: 2em;
+    }
+    @keyframes rainbowtext{
+        0% {
+            transform: translateX(calc(0vw - 10px));
+            color: black;
+        }
+        25%{
+            color: white;
+        }
+        50%{
+            transform: translateX(calc(100vw - 700px));
+            color: black;
+        }
+        75%{
+            color: white;
+        }
+        100% {
+            transform: translateX(0vw);
+            color: black;
+        }
+    }
+}    
+    @media (min-width:1000px){
+        .portada .container .encabezado {
+            font-size: 1.4em;
+        }
+        .portada .container .hero .left-text{
+            font-size: 1.2em;
+        }
+        #boton1{
+            font-size: 1em;
+            white-space: nowrap;
+        }
+        .fechagrande h1{
+            font-size: 3.5em;
+        }
+        .informacion .container .info p{
+            font-size: 1.18em;
+        }
+        .informacion{
+            height: 600px;
+        }
+        .informacion .container .info #logofeid2{
+            height: 110px;
+            width: 210px;
+        }
+        .portada .container .hero .cara img{
+            max-width: 370px;
+        }
+        .portada .container .hero .albums img{
+            width: 110px ;
+            height: 110px;
+        }
+        .fechagrande h1{
+            max-width: 1200px;
+        }
+}
+    @media (min-width: 1400px){
+        .portada .container .hero{
+            gap: 150px;
+        }
+}
+@media (max-width: 750px){
+    .tira #sencillo{
+        display: flex;
+        overflow: hidden;
+        animation: rainbowtext 4s linear infinite;
+    }
+}
