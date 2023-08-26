@@ -1,0 +1,19 @@
+@keyframes inprogress{
+    0%{
+        color: red;
+    }
+    25%{
+        color: blueviolet;
+    }
+    75%{
+        color: blue;
+    }
+    100%{
+        color: red;
+    }
+}
+p{
+    font-size: 4em;
+    text-shadow: 0 1.5px 10px rgb(0, 0, 0);
+    animation: inprogress 4s linear infinite;
+}
